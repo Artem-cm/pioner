@@ -34,6 +34,16 @@ p {
     padding-top: 32px;
 }
 
+.phone a {
+    text-decoration: none;
+    color: inherit !important;
+}
+
+.header__nav .items a {
+    text-decoration: none;
+    color: inherit !important;
+}
+
 .header__mail {
     margin-left: 520px;
     font-size: 14px;
@@ -47,6 +57,12 @@ p {
     text-align: right;
     padding-top: 3px;
 
+
+}
+
+.text__mail a {
+    text-decoration: none;
+    color: inherit !important;
 }
 
 .header__cons {
@@ -59,7 +75,6 @@ p {
     font-size: 20px;
     font-weight: 600;
     padding-top: 3px;
-
 }
 
 .create-line {
@@ -81,7 +96,7 @@ p {
     gap: 35px;
 }
 
-.phone__items {
+/* .phone__items {
     margin-left: 100px;
     margin-top: 5px;
 
@@ -91,7 +106,7 @@ p {
     color: #607CE6;
     font-size: 17px;
     text-transform: uppercase;
-}
+} */
 
 .intro {
     width: 100%;
@@ -345,4 +360,79 @@ p {
     font-size: 16px;
     text-align: center;
     margin-top: 73px;
+}
+
+
+
+/* Стили модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: #333333;
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    color: red;
+}
+
+/* Стили формы */
+#callbackForm input,
+#callbackForm textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#callbackForm button {
+    background: #607CE6;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.callback-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    color: #607CE6;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-left: 100px;
+    margin-top: -7px;
+}
+
+.callback-button:hover {
+    opacity: 0.8;
+}
+
+.phone-icon img {
+    width: 20px;
+    height: 20px;
 }
